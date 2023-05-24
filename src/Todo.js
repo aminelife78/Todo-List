@@ -27,6 +27,7 @@ const Todo = ({ todos, deleteTodo, addTodo, handleClickOpen, successTodo }) => {
               <CheckOutlinedIcon
                 onClick={() => successTodo(todo.id)}
                 sx={{
+                  cursor:"pointer",
                   border: "3px solid",
                   borderColor: "success.main",
                   borderRadius: "50%",
@@ -39,6 +40,7 @@ const Todo = ({ todos, deleteTodo, addTodo, handleClickOpen, successTodo }) => {
                 onClick={(e) => handleClickOpen(todo.id, e.target.id)}
                 id="update"
                 sx={{
+                  cursor:"pointer",
                   border: "3px solid ",
                   borderColor: "primary.main",
                   borderRadius: "50%",
@@ -51,6 +53,7 @@ const Todo = ({ todos, deleteTodo, addTodo, handleClickOpen, successTodo }) => {
                 onClick={(e) => handleClickOpen(todo.id, e.target.id)}
                 id="delete"
                 sx={{
+                  cursor:"pointer",
                   border: "3px solid ",
                   borderColor: "error.main",
                   borderRadius: "50%",
